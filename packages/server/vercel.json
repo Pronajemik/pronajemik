@@ -1,0 +1,12 @@
+{
+	"$schema": "https://openapi.vercel.sh/vercel.json",
+	"installCommand": "bun install && bun run build:function",
+	"buildCommand": "bun install && bun run build:function",
+	"relatedProjects": ["prj_sHRfxp00EFsMojO1W8Ywlx4JFuKh"],
+	"outputDirectory": "",
+	"functions": {
+		"api/index.bundle.js": {
+			"runtime": "@vercel/node@latest"
+		}
+	}
+}
