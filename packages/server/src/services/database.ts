@@ -7,6 +7,7 @@ export type Database = {
 };
 
 export async function createDbConnection(connectionString: string) {
+	console.error("🗒️ MONGO URI at runtime:", process.env);
 	const client = new MongoClient(connectionString);
 	await client.connect();
 

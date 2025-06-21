@@ -27,7 +27,5 @@ export const RequireBase = new Elysia({ name: "Middleware.Base" })
 	})
 	.decorate(
 		"database",
-		await createDbConnection(
-			process.env.DB_CONNECTION_URL ?? "mongodb://127.0.0.1:27017",
-		),
+		await createDbConnection(process.env.MONGODB_URI ?? ""),
 	);
